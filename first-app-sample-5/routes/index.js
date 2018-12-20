@@ -21,5 +21,9 @@ router.get('/', function(req, res, next) {
     // res.render('index', { title: 'hello worlds' });
 });
 
+router.post('/', function(req, res, next) {
+    res.locals.path = path;
+    res.send('abc');
+});
 
 module.exports = router;
